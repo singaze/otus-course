@@ -95,41 +95,4 @@ func Unpack(inputStr string) (string, error) {
 	fmt.Println(b.String())
 
 	return b.String(), nil
-
-	// for i, r := range textRune {
-	// 	// if i == len(textRune)-1 {
-	// 	// 	if unicode.IsLetter(r) {
-	// 	// 		b.WriteRune(r)
-	// 	// 	}
-	// 	// 	break
-	// 	// }
-
-	// 	// if unicode.IsDigit(r) {
-	// 	// 	switch {
-	// 	// 	// Обработка некорректных строк
-	// 	// 	case i == 0, unicode.IsDigit(textRune[i+1]):
-	// 	// 		return "", ErrInvalidString
-	// 	// 	default:
-	// 	// 		continue
-	// 	// 	}
-	// 	// }
-
-	// 	switch {
-	// 	case unicode.IsDigit(textRune[i+1]):
-	// 		repeatCount := int(textRune[i+1] - '0')
-	// 		if repeatCount == 0 {
-	// 			continue
-	// 		}
-	// 		b.WriteString(strings.Repeat(string(r), repeatCount))
-	// 		fmt.Printf("буква %c\n", r)
-
-	// 	case unicode.IsLetter(textRune[i+1]):
-	// 		b.WriteRune(r)
-	// 		fmt.Printf("буква %c\n", r)
-	// 	}
-	// }
-
-	// fmt.Println(b.String())
-
-	// return b.String(), nil
 }
