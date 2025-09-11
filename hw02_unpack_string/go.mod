@@ -1,4 +1,4 @@
-module github.com/singaze/hw02_unpack_string
+module github.com/singaze/otus-course/hw02_unpack_string
 
 go 1.23
 
